@@ -3,14 +3,26 @@ import styles from '@/styles/Home.module.scss'
 import HeaderComponent from '@/components/header'
 import { useState } from 'react'
 import { Pages } from '@/types/main'
+import MobileMenuComponent from '@/components/mobileMenu'
 
 export default function Home() {
 
-  const [activePage, setActivePage] = useState<Pages>('home')
+  const [activePage, setActivePage] = useState<Pages>('home');
+  const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false);
 
   const pageSelected = (page: Pages) => {
     console.log(page)
     setActivePage(page)
+  }
+
+  const openMobileMenu = () => {
+    console.log("open")
+    setMenuIsOpen(true);
+  }
+
+  const closeMobileMenu = () => {
+    console.log("close")
+    setMenuIsOpen(false);
   }
 
   return (
@@ -22,11 +34,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.header}>
-        </div>
+        <MobileMenuComponent
+          menuIsOpen={menuIsOpen}
+          closeCallback={closeMobileMenu}
+        ></MobileMenuComponent>
         <div className={styles.float}>
           <div className={styles.body}>
-            <HeaderComponent activePage={activePage} linkCallback={pageSelected}></HeaderComponent>
+            <HeaderComponent 
+              activePage={activePage} 
+              linkCallback={pageSelected}
+              openMenuCallback={openMobileMenu}
+              menuIsOpen={menuIsOpen}
+            ></HeaderComponent>
             <div className={styles.titleText}>
               <h1>Modern Web Design + Development</h1>
               <p>We offer 100% hand-coded websites without the need for page builders or WordPress. - Unlimited edits and 24/7 support starting at $150/mo.</p>

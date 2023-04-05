@@ -5,6 +5,8 @@ import { Pages } from "@/types/main";
 interface Props {
     activePage: Pages;
     linkCallback: Function;
+    openMenuCallback: Function;
+    menuIsOpen: boolean;
 }
 
 export default function HeaderComponent(props: Props) {
@@ -20,8 +22,8 @@ export default function HeaderComponent(props: Props) {
                 <button className={props.activePage === 'services'? styles.highlight: ''} onClick={() => props.linkCallback('services')}>Services</button>
                 <button className={props.activePage === 'contact'? styles.highlight: ''} onClick={() => props.linkCallback('contact')}>Contact</button>
             </div>
-            <div className={styles.menuButton}>
-                <img src="menu.svg" alt="" />
+            <div onClick={() => props.openMenuCallback()} className={styles.menuButton}>
+                <img style={props.menuIsOpen ? {opacity: 0} : {opacity: 1}} src="menu.svg" alt="" />
             </div>
         </div>
     )

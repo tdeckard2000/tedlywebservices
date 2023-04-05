@@ -1,0 +1,47 @@
+.open {
+    background-color: #404040;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgb(179, 179, 179);
+    height: 300px;
+    opacity: .9;
+    position: absolute;
+    pointer-events: auto;
+    right: 12px;
+    top: 30px;
+    width: 300px;
+    z-index: 1000;
+    transition: all .2s;
+
+    .closeButton {
+        text-align: end;
+
+        img {
+            margin: 4px;
+            height: 40px;
+        }
+    }
+}
+
+.closed {
+    background-color: #404040;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgb(179, 179, 179);
+    height: 200px;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 30px;
+    width: 200px;
+    z-index: 1000;
+    transition: all .1s;
+
+    .closeButton {
+        text-align: end;
+
+        img {
+            margin: 4px;
+            height: 40px;
+        }
+    }
+}
