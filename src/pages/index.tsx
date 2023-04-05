@@ -29,8 +29,7 @@ export default function Home() {
             <HeaderComponent activePage={activePage} linkCallback={pageSelected}></HeaderComponent>
             <div className={styles.titleText}>
               <h1>Modern Web Design + Development</h1>
-              <p>No page builders or WordPress 
-                - We offer 100% hand-coded websites with superior results starting at $150/mo.</p>
+              <p>We offer 100% hand-coded websites without the need for page builders or WordPress. - Unlimited edits and 24/7 support starting at $150/mo.</p>
             </div>
           </div>
         </div>
