@@ -1,3 +1,25 @@
+.body {
+    margin: 0 60px;
+
+    .titleText {
+        position: relative;
+        top: 100px;
+
+        h1 {
+            letter-spacing: 1px;
+            font-weight: 700;
+            font-size: 44px;
+            max-width: 100%;
+            width: 400px;
+        }
+
+        p {
+            max-width: 100%;
+            width: 300px;
+        }
+    }
+}
+
 .main {
     background-color: rgb(46, 46, 46);
     display: flex;
@@ -7,10 +29,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 200vh;
     width: 100vw;
 
-    .body {
+    .float {
         background-image: url('../../public/backgroundCropped.png');
         background-repeat: no-repeat;
         background-size: 100%;
@@ -21,16 +43,22 @@
 
 }
 
-@media screen and (max-width: 900px) { //tablet
+@media screen and (max-width: 1000px) { //tablet
 
     
 }
 
 @media screen and (max-width: 650px) { //phone
+
+    .body {
+        margin: 0 20px;
+    }
+
     .main {
 
-        .body {
+        .float {
             background-image: url('../../public/background.png');
+            margin: 0;
             width: 100%;
         }
 
