@@ -84,7 +84,7 @@
         }
 
         .logoContainer {
-            margin-left: 20px;
+            margin-left: 0;
             .bottom {
                 font-size: 12px;
                 letter-spacing: 4px;
@@ -98,6 +98,7 @@
 
         .menuButton {
             display: flex;
+            margin-right: 0px;
         }
     }
 }
