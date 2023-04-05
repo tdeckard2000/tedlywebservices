@@ -51,6 +51,7 @@ export default function Home() {
             <div className={styles.titleText}>
               <h1>Modern Web Design + Development</h1>
               <p>We offer 100% hand-coded websites without the need for page builders or WordPress. - Unlimited edits and 24/7 support starting at $150/mo.</p>
+              <button>GET IN TOUCH!</button>
             </div>
           </div>
         </div>

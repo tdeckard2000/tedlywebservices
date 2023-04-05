@@ -39,7 +39,7 @@
 
         button {
             background: none;
-            border: none;
+            border: 1px solid rgba(0, 0, 0, 0);
             border-radius: 3px;
             cursor: pointer;
             color: black;
@@ -50,6 +50,10 @@
             height: 36px;
             margin: 27px 0;
             padding: 0 10px;
+
+            &:hover {
+                border: 1px solid #9f8763;
+            }
         }
     }
 

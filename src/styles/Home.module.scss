@@ -18,6 +18,24 @@
             max-width: 100%;
             width: 300px;
         }
+
+        button {
+            background-color: rgb(38, 38, 38);
+            border: none;
+            box-shadow: 1px 1px 5px #0000001f;
+            color: white;
+            font-weight: 600;
+            height: 45px;
+            margin-top: 30px;
+            user-select: none;
+            width: 200px;
+
+            &:hover {
+                background-color: rgb(28, 28, 28);
+                box-shadow: none;
+                cursor: pointer;
+            }
+        }
     }
 }
 
@@ -74,7 +92,7 @@
     .main {
 
         .float {
-            background-image: url('../../public/backgroundMobile.jpg');
+            background-image: url('../../public/backgroundMobile3.jpg');
             margin: 0;
             width: 100%;
         }
