@@ -37,8 +37,10 @@ export default function Home() {
         <MobileMenuComponent
           menuIsOpen={menuIsOpen}
           closeCallback={closeMobileMenu}
+          linkCallback={pageSelected}
+          activePage={activePage}
         ></MobileMenuComponent>
-        <div className={styles.float}>
+        <div className={styles.float} onClick={menuIsOpen ? closeMobileMenu : () => {}}>
           <div className={styles.body}>
             <HeaderComponent 
               activePage={activePage} 

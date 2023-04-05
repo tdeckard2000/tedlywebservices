@@ -3,7 +3,7 @@
     border-radius: 10px;
     box-shadow: 1px 1px 8px rgb(179, 179, 179);
     height: 300px;
-    opacity: .9;
+    opacity: .95;
     position: absolute;
     pointer-events: auto;
     right: 12px;
@@ -43,5 +43,33 @@
             margin: 4px;
             height: 40px;
         }
+    }
+}
+
+.links {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    
+    .highlight {
+        background-color: #9f8763;
+        color: white;
+    }
+    
+    button {
+        background: none;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        color: white;
+        user-select: none;
+        font: inherit;
+        font-size: 18px;
+        font-weight: 500;
+        height: 40px;
+        padding: 0 10px;
+        width: 150px;
     }
 }
