@@ -4,6 +4,7 @@ import HeaderComponent from '@/components/header'
 import { useState } from 'react'
 import { Pages } from '@/types/main'
 import MobileMenuComponent from '@/components/mobileMenu'
+import ThreeItemSectionComponent from '@/components/threeItemSection'
 
 export default function Home() {
 
@@ -50,9 +51,33 @@ export default function Home() {
             ></HeaderComponent>
             <div className={styles.titleText}>
               <h1>Modern Web Design + Development</h1>
-              <p>We offer 100% hand-coded websites without the need for page builders or WordPress. - Unlimited edits and 24/7 support starting at $150/mo.</p>
+              <p>We offer 100% hand-coded websites without the need for page builders or WordPress. - Unlimited edits and 24/7 support starting at $160/mo.</p>
               <button>GET IN TOUCH!</button>
             </div>
+          </div>
+          <div className={styles.sectionTwo}>
+            <ThreeItemSectionComponent>
+              <div>
+                  <h5>RESPONSIVE</h5>
+                  <p>Fits all mobile, tablet, and desktop screens</p>
+                  <p>Access your website from anywhere</p>
+                  <img src="monitor.svg" alt="" />
+              </div>
+              <span></span>
+              <div>
+                  <h5>OPTIMIZED</h5>
+                  <p>Superior search engine performance</p>
+                  <p>Follows all of Google's latest best practices</p>
+                  <img src="volt.svg" alt="" />
+              </div>
+              <span></span>
+              <div>
+                  <h5>HOSTED</h5>
+                  <p>Hosting is built into the monthly payment</p>
+                  <p>No need to worry about it</p>
+                  <img src="cloud.svg" alt="" />
+              </div> 
+            </ThreeItemSectionComponent>
           </div>
         </div>
       </main>

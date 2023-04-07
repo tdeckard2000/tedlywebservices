@@ -5,6 +5,7 @@
         text-shadow: 1px 1px 5px #0000001f;
         position: relative;
         top: 100px;
+        z-index: 100;
 
         h1 {
             letter-spacing: 1px;
@@ -43,13 +44,13 @@
     background-color: rgb(46, 46, 46);
     display: flex;
     justify-content: center;
-    padding: none;
-    margin: none;
+    padding: 0;
+    margin: 0;
     position: absolute;
     top: 0;
     left: 0;
     height: 200vh;
-    width: 100vw;
+    width: 100%;
 
     .float {
         background-image: url('../../public/backgroundCroppedOptimized.jpg');
@@ -60,7 +61,16 @@
         width: 100%;
         max-width: 1400px;
     }
+    
+}
 
+.sectionTwo {
+    background-color: #1a1a1a;
+    position: absolute;
+    top:  min(62.5vw, 887px);
+    height: calc(100% - 62.5vw);
+    max-width: 1400px;
+    width: 100%;
 }
 
 @media screen and (max-width: 1000px) { //tablet
@@ -97,5 +107,9 @@
             width: 100%;
         }
 
+    }
+
+    .sectionTwo {
+        top:  172vw;
     }
 }
