@@ -67,7 +67,7 @@ export default function Home() {
               <div>
                   <h5>OPTIMIZED</h5>
                   <p>Superior search engine performance</p>
-                  <p>Follows all of Google's latest best practices</p>
+                  <p>{"Follows all of Google's latest best practices"}</p>
                   <img src="volt.svg" alt="" />
               </div>
               <span></span>
