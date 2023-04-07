@@ -75,6 +75,20 @@
 
 @media screen and (max-width: 1000px) { //tablet
 
+    .main {
+
+        .float {
+            background-image: url('../../public/backgroundMobile3.jpg');
+            margin: 0;
+            width: 100%;
+            background-position-y: -450px;
+        }
+
+    }
+
+    .sectionTwo {
+        top:  113vw;
+    }
     
 }
 
@@ -105,6 +119,7 @@
             background-image: url('../../public/backgroundMobile3.jpg');
             margin: 0;
             width: 100%;
+            background-position-y: 0px;
         }
 
     }
