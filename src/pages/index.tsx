@@ -6,6 +6,9 @@ import { Pages } from '@/types/main'
 import MobileMenuComponent from '@/components/mobileMenu'
 import ThreeItemSectionComponent from '@/components/threeItemSection'
 import Image from 'next/image'
+import OneItemSection from '@/components/oneItemSection'
+import ImageTextSection from '@/components/imageTextSection'
+import CheckListSection from '@/components/CheckListSection'
 
 export default function Home() {
 
@@ -58,11 +61,20 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.sectionTwo}>
+            <OneItemSection>
+              <span>
+                <h1><span>What</span> We Offer</h1>
+                <p>
+                    We specialize in web design and development for small businesses across the US. - 
+                    All code is handwritten for optimal performance, helping drive more customers to your website and increased revenue to your business.
+                </p>
+              </span>
+            </OneItemSection>
             <ThreeItemSectionComponent>
               <div>
                   <h5>RESPONSIVE</h5>
-                  <p>Fits all mobile, tablet, and desktop screens</p>
                   <p>Access your website from anywhere</p>
+                  <p>Fits all mobile, tablet, and desktop screens</p>
                   <div>
                     <Image fill src="monitor.svg" alt='Computer Monitor Icon'></Image>
                   </div>
@@ -79,13 +91,26 @@ export default function Home() {
               <span></span>
               <div>
                   <h5>HOSTED</h5>
-                  <p>Hosting is built into the monthly payment</p>
+                  <p>Hosting is included in the monthly payment</p>
                   <p>No need to worry about it</p>
                   <div>
                     <Image fill src="cloud.svg" alt='Cloud Icon'></Image>
                   </div>
               </div> 
             </ThreeItemSectionComponent>
+            <OneItemSection>
+              <span className={styles.pitch}>
+              <h1><span>$500</span> down. <span>$160</span> Per Month. <br></br>6 Month Minimum Contract.</h1>
+              <p>We keep it simple. No hidden fees or surprises. <br /> 
+                $500 down for a standard 4 page small business website. <br /> Cancel anytime, no costs or hassles.</p>
+              </span>
+              <div>
+                    <Image src='checklist.svg' fill alt="Storefront Icon"></Image>
+              </div>
+            </OneItemSection>
+            <CheckListSection>
+              <span></span>
+            </CheckListSection>
           </div>
         </div>
       </main>
