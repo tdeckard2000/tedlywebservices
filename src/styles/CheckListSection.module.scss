@@ -36,6 +36,7 @@
                 color: #e1e1e1;
                 text-align: center;
                 margin: 14px auto;
+                margin-top: 24px;
                 font-size: 14px;
                 font-weight: 200;
                 width: 250px;
@@ -55,6 +56,17 @@
     .main {
         .row {
             flex-direction: column;
+
+            .block {
+
+                img {
+                    left: 10px;
+                }
+
+                h5 {
+                    font-size: 20px;
+                }
+            }
         }
     }
 

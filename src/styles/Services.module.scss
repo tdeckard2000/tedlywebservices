@@ -1,0 +1,67 @@
+.body {
+    // background-color: #cdcdcd;
+    margin: 0 60px;
+
+    .titleText {
+        text-shadow: 1px 1px 5px #0000001f;
+        position: relative;
+        top: 100px;
+        z-index: 100;
+
+        h1 {
+            letter-spacing: 1px;
+            font-weight: 700;
+            font-size: 44px;
+            max-width: 100%;
+            width: 400px;
+        }
+
+        p {
+            max-width: 100%;
+            width: 300px;
+        }
+
+        button {
+            background-color: rgb(38, 38, 38);
+            border: none;
+            box-shadow: 1px 1px 5px #0000001f;
+            color: white;
+            font-weight: 600;
+            height: 45px;
+            margin-top: 30px;
+            user-select: none;
+            width: 200px;
+
+            &:hover {
+                background-color: rgb(28, 28, 28);
+                box-shadow: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.main {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400vh;
+    width: 100%;
+
+    .float {
+        background-image: url('../../public/backgroundSliver.png');
+        background-repeat: no-repeat;
+        // background-color: #cdcdcd;
+        background-size: 100%;
+        box-shadow: 0px 0px 24px black;
+        height: 99%;
+        width: 100%;
+        max-width: 1400px;
+    }
+    
+}

@@ -66,8 +66,11 @@ export default function Home() {
                 <h1><span>What</span> We Offer</h1>
                 <p>
                     We specialize in web design and development for small businesses across the US. - 
-                    All code is handwritten for optimal performance, helping drive more customers to your website and increased revenue to your business.
+                    All code is handwritten for optimal performance, helping to drive more customers to your website and increased revenue to your business.
                 </p>
+                <div>
+                    <Image src='ribbon.svg' fill alt="Storefront Icon"></Image>
+                </div>
               </span>
             </OneItemSection>
             <ThreeItemSectionComponent>
@@ -108,8 +111,20 @@ export default function Home() {
                     <Image src='checklist.svg' fill alt="Storefront Icon"></Image>
               </div>
             </OneItemSection>
-            <CheckListSection>
-            </CheckListSection>
+            <CheckListSection></CheckListSection>
+            <OneItemSection>
+              <span className={styles.aboutMe}>
+                <h1><span>Who</span> We Are</h1>
+                <p>My nickname is <span style={{color: '#9f8763', fontWeight: '500'}}>Ted</span>, but you can call me <span>Trent</span>. 
+                  I have been developing websites for 5+ years professionally and for fun.
+                  Tedly was created as a means to work for myself. I enjoy the challenges and
+                  personal connection that comes with running your own business.</p>
+                <p>Learn more: <a href="https://www.trentendeavors.com">Personal Portfolio</a></p>
+                <Image className={styles.me} src='/meCropped.jpg' height={200} width={200} alt="Storefront Icon"></Image>
+                <p className={styles.name}>Trent Deckard</p>
+                <p className={styles.title}>OWNER & DEVELOPER</p>
+              </span>
+            </OneItemSection>
           </div>
         </div>
       </main>
