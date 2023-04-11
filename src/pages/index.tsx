@@ -34,7 +34,7 @@ export default function Home() {
         <meta name="description" content="Quality Websites For Small Businesses" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preload" as='image' imageSrcSet='bgMobile1.webp 700w, bgDesktop1.webp 1500w' imageSizes='100%'/>
+        {/* <link rel="preload" as='image' imageSrcSet='bgMobile1.webp 700w, bgDesktop1.webp 1500w' imageSizes='100%'/> */}
       </Head>
       <main className={styles.main}>
         <MobileMenuComponent
