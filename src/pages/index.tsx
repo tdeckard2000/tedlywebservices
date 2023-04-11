@@ -109,7 +109,6 @@ export default function Home() {
               </div>
             </OneItemSection>
             <CheckListSection>
-              <span></span>
             </CheckListSection>
           </div>
         </div>

@@ -3,13 +3,11 @@ import styles from "@/styles/CheckListSection.module.scss"
 import Image from "next/image";
 
 interface Props {
-    children: any;
 }
 
 export default function CheckListSection (props: Props) {
     return(
         <div className={styles.main}>
-            {/* {props.children} */}
             <div className={styles.row}>
                 <div className={styles.block}>
                     <Image src={'/check.svg'} alt="check icon" width={30} height={30}></Image>
@@ -47,7 +45,7 @@ export default function CheckListSection (props: Props) {
                     <Image src={'/check.svg'} alt="check icon" width={30} height={30}></Image>
                     <div>
                         <h5>Google Speed Score</h5>
-                        <p>We follow Google's best practices to improve your search ranking</p>
+                        <p>{"We follow Google's best practices to improve your search ranking"}</p>
                     </div>
                 </div>
                 <div className={styles.block}>
