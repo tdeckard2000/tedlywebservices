@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "@/styles/Header.module.scss"
 import { Pages } from "@/types/main";
+import Image from "next/image";
 
 interface Props {
     activePage: Pages;
@@ -23,7 +24,7 @@ export default function HeaderComponent(props: Props) {
                 <button className={props.activePage === 'contact'? styles.highlight: ''} onClick={() => props.linkCallback('contact')}>Contact</button>
             </div>
             <div onClick={() => props.openMenuCallback()} className={styles.menuButton}>
-                <img style={props.menuIsOpen ? {opacity: 0} : {opacity: 1}} src="menu.svg" alt="" />
+                <Image style={props.menuIsOpen ? {opacity: 0} : {opacity: 1}} src={"menu.svg"} alt="menu icon" height={32} width={32}></Image>
             </div>
         </div>
     )

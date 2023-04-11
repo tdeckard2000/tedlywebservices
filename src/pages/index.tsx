@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { Pages } from '@/types/main'
 import MobileMenuComponent from '@/components/mobileMenu'
 import ThreeItemSectionComponent from '@/components/threeItemSection'
+import Image from 'next/image'
 
 export default function Home() {
 
@@ -61,21 +62,27 @@ export default function Home() {
                   <h5>RESPONSIVE</h5>
                   <p>Fits all mobile, tablet, and desktop screens</p>
                   <p>Access your website from anywhere</p>
-                  <img src="monitor.svg" alt="" />
+                  <div>
+                    <Image fill src="monitor.svg" alt='Computer Monitor Icon'></Image>
+                  </div>
               </div>
               <span></span>
               <div>
                   <h5>OPTIMIZED</h5>
                   <p>Superior search engine performance</p>
                   <p>{"Follows all of Google's latest best practices"}</p>
-                  <img src="volt.svg" alt="" />
+                  <div>
+                    <Image fill src="chart.svg" alt='Computer Monitor Icon'></Image>
+                  </div>
               </div>
               <span></span>
               <div>
                   <h5>HOSTED</h5>
                   <p>Hosting is built into the monthly payment</p>
                   <p>No need to worry about it</p>
-                  <img src="cloud.svg" alt="" />
+                  <div>
+                    <Image fill src="cloud.svg" alt='Cloud Icon'></Image>
+                  </div>
               </div> 
             </ThreeItemSectionComponent>
           </div>

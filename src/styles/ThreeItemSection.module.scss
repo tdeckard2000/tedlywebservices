@@ -10,21 +10,29 @@
         text-align: center;
         height: 180px;
         width: 300px;
-    }
 
-    h5 {
-        color: white;
-        font-size: 16px;
-        font-weight: 400;
-    }
+        h5 {
+            color: white;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    
+        p {
+            color: #e1e1e1;
+            text-align: center;
+            margin: 14px auto;
+            font-size: 12px;
+            font-weight: 200;
+            width: 240px;
+        }
 
-    p {
-        color: #e1e1e1;
-        text-align: center;
-        margin: 14px auto;
-        font-size: 12px;
-        font-weight: 200;
-        width: 240px;
+        div {
+            position: absolute;
+            height: 40px;
+            height: 40px;
+            margin-top: 10px;
+            filter: invert(57%) sepia(23%) saturate(538%) hue-rotate(357deg) brightness(90%) contrast(87%);
+        }
     }
 
     span {
@@ -33,12 +41,6 @@
         margin-top: 20px;
         height: 160px;
         width: 0px;
-    }
-
-    img {
-        height: 40px;
-        margin-top: 10px;
-        filter: invert(57%) sepia(23%) saturate(538%) hue-rotate(357deg) brightness(90%) contrast(87%);
     }
 }
 
@@ -53,21 +55,25 @@
     .main {
         flex-direction: column;
 
+        div {
+
+            h5 {
+                font-size: 20px;
+            }
+        
+            p {
+                font-size: 14px;
+                width: 100%;
+            }
+
+        }
+
         span {
             border-right: none;
             border-top: 1px solid #686868;
             height: 0px;
             margin: 85px 0 30px 0;
             width: 150px;
-        }
-
-        h5 {
-            font-size: 20px;
-        }
-    
-        p {
-            font-size: 14px;
-            width: 100%;
         }
     }
 

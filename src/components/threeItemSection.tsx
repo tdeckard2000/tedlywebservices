@@ -16,21 +16,27 @@ export default function ThreeItemSectionComponent (props: Props) {
                 <h5>TEXT HERE</h5>
                 <p>text here</p>
                 <p>text here</p>
-                <img src="" alt="" />
+                <div>
+                    <Image fill src="monitor.svg" alt='Computer Monitor Icon'></Image>
+                </div>
             </div>
             <span></span>
             <div>
                 <h5>TEXT HERE</h5>
                 <p>text here</p>
                 <p>text here</p>
-                <img src="" alt="" />
+                <div>
+                    <Image fill src="monitor.svg" alt='Computer Monitor Icon'></Image>
+                </div>
             </div>
             <span></span>
             <div>
                 <h5>TEXT HERE</h5>
                 <p>text here</p>
                 <p>text here</p>
-                <img src="" alt="" />
+                <div>
+                    <Image fill src="monitor.svg" alt='Computer Monitor Icon'></Image>
+                </div>
             </div> 
             */}
         </div>

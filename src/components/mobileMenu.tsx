@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "@/styles/MobileMenu.module.scss"
+import Image from "next/image";
 
 interface Props {
     closeCallback: Function;
@@ -12,7 +13,7 @@ export default function MobileMenuComponent (props: Props) {
     return(
         <div className={props.menuIsOpen ? styles.open : styles.closed}>
             <div onClick={() => props.closeCallback()} className={styles.closeButton}>
-                <img src="closeIcon.svg" alt="" />
+                <Image className={styles.closeIcon} height={40} width={40} src="closeIcon.svg" alt="Close Icon"></Image>
             </div>
             <div className={styles.links}>
                 <button className={props.activePage === 'home'? styles.highlight: ''} onClick={() => props.linkCallback('home')}>Home</button>
