@@ -8,7 +8,7 @@ import MobileMenuComponent from '@/components/mobileMenu'
 
 export default function Services() {
 
-  const [activePage, setActivePage] = useState<Pages>('home');
+  const [activePage, setActivePage] = useState<Pages>('services');
   const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false);
 
   const pageSelected = (page: Pages) => {
@@ -51,6 +51,9 @@ export default function Services() {
               menuIsOpen={menuIsOpen}
             ></HeaderComponent>
           </div>
+            <div className={styles.sectionTwo}>
+
+            </div>
         </div>
       </main>
     </>

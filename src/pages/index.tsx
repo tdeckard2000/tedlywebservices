@@ -8,7 +8,7 @@ import ThreeItemSectionComponent from '@/components/threeItemSection'
 import Image from 'next/image'
 import OneItemSection from '@/components/oneItemSection'
 import ImageTextSection from '@/components/imageTextSection'
-import CheckListSection from '@/components/CheckListSection'
+import CheckListSection from '@/components/checkListSection'
 
 export default function Home() {
 

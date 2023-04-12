@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "@/styles/MobileMenu.module.scss"
 import Image from "next/image";
+import Link from "next/link";
 
 interface Props {
     closeCallback: Function;
@@ -16,10 +17,18 @@ export default function MobileMenuComponent (props: Props) {
                 <Image className={styles.closeIcon} height={40} width={40} src="closeIcon.svg" alt="Close Icon"></Image>
             </div>
             <div className={styles.links}>
-                <button className={props.activePage === 'home'? styles.highlight: ''} onClick={() => props.linkCallback('home')}>Home</button>
-                <button className={props.activePage === 'about'? styles.highlight: ''} onClick={() => props.linkCallback('about')}>About</button>
-                <button className={props.activePage === 'services'? styles.highlight: ''} onClick={() => props.linkCallback('services')}>Services</button>
-                <button className={props.activePage === 'contact'? styles.highlight: ''} onClick={() => props.linkCallback('contact')}>Contact</button>
+                <Link href="/">
+                    <button className={props.activePage === 'home'? styles.highlight: ''} onClick={() => props.linkCallback('home')}>Home</button>
+                </Link>
+                <Link href="/services">
+                    <button className={props.activePage === 'services'? styles.highlight: ''} onClick={() => props.linkCallback('services')}>Services</button>
+                </Link>
+                <Link href="/about">
+                    <button className={props.activePage === 'about'? styles.highlight: ''} onClick={() => props.linkCallback('about')}>About</button>
+                </Link>
+                <Link href="/contact">
+                    <button className={props.activePage === 'contact'? styles.highlight: ''} onClick={() => props.linkCallback('contact')}>Contact</button>
+                </Link>
             </div>
         </div>
     )
