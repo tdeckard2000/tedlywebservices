@@ -4,6 +4,7 @@ import HeaderComponent from '@/components/header'
 import { useState } from 'react'
 import { Pages } from '@/types/main'
 import MobileMenuComponent from '@/components/mobileMenu'
+import Image from 'next/image'
 
 
 export default function About() {
@@ -31,7 +32,6 @@ export default function About() {
         <meta name="description" content="Quality Websites For Small Businesses" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        {/* <link rel="preload" as='image' imageSrcSet='bgMobile1.webp 700w, bgDesktop1.webp 1500w' imageSizes='100%'/> */}
       </Head>
       <main className={styles.main}>
         <MobileMenuComponent
@@ -52,8 +52,8 @@ export default function About() {
           </div>
           <div className={styles.body}>
             <div className={styles.titleContainer}>
+              <Image style={{filter: "invert(1)"}} src="/smile.svg" alt='Phone icon' width={50} height={50}></Image>
               <h1>ABOUT US</h1>
-              {/* <p>What we have to offer.</p> */}
               <button>GET IN TOUCH!</button>
             </div>
           </div>

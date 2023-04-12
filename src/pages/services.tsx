@@ -4,6 +4,7 @@ import HeaderComponent from '@/components/header'
 import { useState } from 'react'
 import { Pages } from '@/types/main'
 import MobileMenuComponent from '@/components/mobileMenu'
+import Image from 'next/image'
 
 
 export default function Services() {
@@ -52,8 +53,8 @@ export default function Services() {
           </div>
           <div className={styles.body}>
             <div className={styles.titleContainer}>
+              <Image style={{filter: "invert(1)"}} src="/blocks.svg" alt='Phone icon' width={50} height={50}></Image>
               <h1>OUR SERVICES</h1>
-              {/* <p>What we have to offer.</p> */}
               <button>GET IN TOUCH!</button>
             </div>
           </div>
