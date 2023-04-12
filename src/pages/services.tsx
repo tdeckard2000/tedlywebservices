@@ -79,6 +79,22 @@ export default function Services() {
 
               <ImageTextSectionComponent>
                 <section className={styles.mobileImage}>
+                  <Image src='/modernDesign.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
+                </section>
+                <div>
+                  <h1>Sleek & Modern</h1>
+                  <p>{`We specialize in modern, clean website designs. 
+                  This makes it easier for customers to navigate your website and it directs their attention to what matters most.`} </p>
+                </div>
+                <section className={styles.desktopImage}>
+                  <Image src='/modernDesign.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
+                </section>
+              </ImageTextSectionComponent>
+
+              <Image className={styles.sectionDivider} src="/dots.svg" alt='Squiggle line icon' width={30} height={30}></Image>
+
+              <ImageTextSectionComponent>
+                <section>
                   <Image src='/earthSearch.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
                 </section>
                 <div>
@@ -87,15 +103,12 @@ export default function Services() {
                   User accessibility, quick loading times, mobile and tablet support, and clean code structures each 
                   play an important role in Google's ranking algorithm.`} </p>
                 </div>
-                <section className={styles.desktopImage}>
-                  <Image src='/earthSearch.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
-                </section>
               </ImageTextSectionComponent>
 
               <Image className={styles.sectionDivider} src="/dots.svg" alt='Squiggle line icon' width={30} height={30}></Image>
 
               <ImageTextSectionComponent>
-                <section>
+                <section className={styles.mobileImage}>
                   <Image src='/gearSparkle.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
                 </section>
                 <div>
@@ -106,12 +119,15 @@ export default function Services() {
                   </p>
                   <p>{`Don't sweat it.`}</p>
                 </div>
+                <section className={styles.desktopImage}>
+                  <Image src='/gearSparkle.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
+                </section>
               </ImageTextSectionComponent>
 
               <Image className={styles.sectionDivider} src="/dots.svg" alt='Squiggle line icon' width={30} height={30}></Image>
 
               <ImageTextSectionComponent>
-                <section className={styles.mobileImage}>
+                <section>
                   <Image className={styles.photoOfMe} src='/trentTrust.jpg' alt="photo of the developer" fill style={{borderRadius: "50px", filter: 'none'}}></Image>
                 </section>
                 <div>
@@ -120,9 +136,6 @@ export default function Services() {
                   <p>{`That will`} <span style={{textDecoration: "underline"}}>not</span> {`be your experience with Tedly. 
                   Clear communication and timely replies are paramount. Just tell me what you need.`}</p>
                 </div>
-                <section className={styles.desktopImage}>
-                  <Image className={styles.photoOfMe} src='/trentTrust.jpg' alt="photo of the developer" fill style={{borderRadius: "50px", filter: 'none'}}></Image>
-                </section>
               </ImageTextSectionComponent>
 
               <Image className={styles.sectionDivider} src="/dots.svg" alt='Squiggle line icon' width={30} height={30}></Image>
