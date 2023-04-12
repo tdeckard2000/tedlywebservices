@@ -43,6 +43,10 @@
 
 }
 
+.mobileImage {
+    display: none;
+}
+
 .headerContainer {
     background-color: #dad9de;
     position: relative;
@@ -59,13 +63,13 @@
     top: 0;
     bottom: 0;
     left: 0;
-    height: 2800px;
+    height: 3200px;
     width: 100%;
 
     .float {
         background-size: 100%;
         box-shadow: 0px 0px 24px black;
-        height: 2700px;
+        height: 3100px;
         width: 100%;
         max-width: 1400px;
         margin-bottom: 300px;
@@ -97,6 +101,13 @@
     height: 2300px;
     z-index: 1000;
     // margin-bottom: 200px;
+}
+
+.sectionDivider {
+    margin: 100px auto 0;
+    width: 100%;
+    filter: invert(57%) sepia(23%) saturate(538%) hue-rotate(357deg) brightness(90%) contrast(87%);
+    // filter: invert(1);
 }
 
 @media screen and (max-width: 1000px) { //tablet
@@ -162,6 +173,19 @@
 
     .sectionTwo {
         top: 500px;
+        height: 3550px;
+    }
+
+    .photoOfMe {
+        margin-bottom: 20px;
+    }
+
+    .mobileImage {
+        display: initial;
+    }
+
+    .desktopImage {
+        display: none;
     }
 
 }

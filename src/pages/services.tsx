@@ -5,6 +5,9 @@ import { useState } from 'react'
 import { Pages } from '@/types/main'
 import MobileMenuComponent from '@/components/mobileMenu'
 import Image from 'next/image'
+import ImageTextSectionComponent from '@/components/imageTextSection'
+import OneItemSection from '@/components/oneItemSection'
+import ThreeItemSectionComponent from '@/components/threeItemSection'
 
 
 export default function Services() {
@@ -58,8 +61,110 @@ export default function Services() {
               <button>GET IN TOUCH!</button>
             </div>
           </div>
+
             <div className={styles.sectionTwo}>
-              <h1>Placeholder</h1>
+              <ImageTextSectionComponent>
+                <section>
+                  <Image src='/designServices.svg' alt="laptop on white background" fill style={{borderRadius: "10px 0 0 10px"}}></Image>
+                </section>
+                <div>
+                  <h1>Web Design + Development<br /> Done Right</h1>
+                  <p>{`We don't use bloated plugins, third-party code, WordPress, or page builders. We carefully write every line of code by hand, 
+                  allowing for better real-world performance and more flexibility when it comes to designing your website.`}</p>
+                  <p>{"For the best conversion rates and higher search rankings, faster websites are where it's at."}</p>
+                </div>
+              </ImageTextSectionComponent>
+
+              <Image className={styles.sectionDivider} src="/dots.svg" alt='Squiggle line icon' width={30} height={30}></Image>
+
+              <ImageTextSectionComponent>
+                <section className={styles.mobileImage}>
+                  <Image src='/earthSearch.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
+                </section>
+                <div>
+                  <h1>Search Engine Optimized</h1>
+                  <p>{`To rank your website higher on Google, we follow all the latest and greatest SEO best practices.
+                  User accessibility, quick loading times, mobile and tablet support, and clean code structures each 
+                  play an important role in Google's ranking algorithm.`} </p>
+                </div>
+                <section className={styles.desktopImage}>
+                  <Image src='/earthSearch.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
+                </section>
+              </ImageTextSectionComponent>
+
+              <Image className={styles.sectionDivider} src="/dots.svg" alt='Squiggle line icon' width={30} height={30}></Image>
+
+              <ImageTextSectionComponent>
+                <section>
+                  <Image src='/gearSparkle.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
+                </section>
+                <div>
+                  <h1>Unlimited Changes</h1>
+                  <p>
+                    Call me at any time, day or night.
+                    I will update your images, change your prices, or modify your products and services quickly and effectively.
+                  </p>
+                  <p>{`Don't sweat it.`}</p>
+                </div>
+              </ImageTextSectionComponent>
+
+              <Image className={styles.sectionDivider} src="/dots.svg" alt='Squiggle line icon' width={30} height={30}></Image>
+
+              <ImageTextSectionComponent>
+                <section className={styles.mobileImage}>
+                  <Image className={styles.photoOfMe} src='/trentTrust.jpg' alt="photo of the developer" fill style={{borderRadius: "50px", filter: 'none'}}></Image>
+                </section>
+                <div>
+                  <h1>A Developer you can Trust</h1>
+                  <p>{`The #1 complaint I hear about other development companies is a lack of communication (or none at all).`}</p>
+                  <p>{`That will`} <span style={{textDecoration: "underline"}}>not</span> {`be your experience with Tedly. 
+                  Clear communication and timely replies are paramount. Just tell me what you need.`}</p>
+                </div>
+                <section className={styles.desktopImage}>
+                  <Image className={styles.photoOfMe} src='/trentTrust.jpg' alt="photo of the developer" fill style={{borderRadius: "50px", filter: 'none'}}></Image>
+                </section>
+              </ImageTextSectionComponent>
+
+              <Image className={styles.sectionDivider} src="/dots.svg" alt='Squiggle line icon' width={30} height={30}></Image>
+
+              <OneItemSection>
+                <span className={styles.pitch}>
+                  <h1><span>Searching</span> For Something Else?</h1>
+                  <p>I offer other services as well. Let me build what you need</p>
+                </span>
+                {/* <div>
+                      <Image src='checklist.svg' fill alt="Storefront Icon"></Image>
+                </div> */}
+              </OneItemSection>
+
+              <ThreeItemSectionComponent>
+                <div>
+                    <h5>WEB APPLICATIONS</h5>
+                    <p>Need something more complex?</p>
+                    <p>I do that too <a style={{color: "white"}} href="https://www.trentendeavors.com">portfolio</a></p>
+                    <div>
+                      <Image fill src="terminal.svg" alt='Computer Monitor Icon'></Image>
+                    </div>
+                </div>
+                <span></span>
+                <div>
+                    <h5>WEBSITE CONSULTING</h5>
+                    <p>Still figuring out what you need?</p>
+                    <p>Let me answer your questions</p>
+                    <div>
+                      <Image fill src="assistance.svg" alt='Computer Monitor Icon'></Image>
+                    </div>
+                </div>
+                <span></span>
+                <div>
+                    <h5>FIX EXISTING SITES</h5>
+                    <p>Problems with a website someone else made?</p>
+                    <p>Let me fix it for you</p>
+                    <div>
+                      <Image fill src="constructionGuy.svg" alt='Cloud Icon'></Image>
+                    </div>
+                </div> 
+              </ThreeItemSectionComponent>
             </div>
         </div>
       </main>
