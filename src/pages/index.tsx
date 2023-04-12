@@ -7,7 +7,6 @@ import MobileMenuComponent from '@/components/mobileMenu'
 import ThreeItemSectionComponent from '@/components/threeItemSection'
 import Image from 'next/image'
 import OneItemSection from '@/components/oneItemSection'
-import ImageTextSection from '@/components/imageTextSection'
 import CheckListSection from '@/components/checkListSection'
 
 export default function Home() {
