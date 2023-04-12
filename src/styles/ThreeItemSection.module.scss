@@ -46,13 +46,6 @@
 }
 
 @media screen and (max-width: 1000px) { //tablet
-
-    
-}
-
-@media screen and (max-width: 650px) { //phone
-
-
     .main {
         flex-direction: column;
 
@@ -77,5 +70,10 @@
             width: 150px;
         }
     }
+    
+}
+
+@media screen and (max-width: 650px) { //phone
+
 
 }

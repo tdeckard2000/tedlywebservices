@@ -1,14 +1,14 @@
 import Head from 'next/head'
-import styles from '@/styles/Services.module.scss'
+import styles from '@/styles/About.module.scss'
 import HeaderComponent from '@/components/header'
 import { useState } from 'react'
 import { Pages } from '@/types/main'
 import MobileMenuComponent from '@/components/mobileMenu'
 
 
-export default function Services() {
+export default function About() {
 
-  const [activePage, setActivePage] = useState<Pages>('services');
+  const [activePage, setActivePage] = useState<Pages>('about');
   const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false);
 
   const pageSelected = (page: Pages) => {
@@ -52,7 +52,7 @@ export default function Services() {
           </div>
           <div className={styles.body}>
             <div className={styles.titleContainer}>
-              <h1>OUR SERVICES</h1>
+              <h1>ABOUT US</h1>
               {/* <p>What we have to offer.</p> */}
               <button>GET IN TOUCH!</button>
             </div>
