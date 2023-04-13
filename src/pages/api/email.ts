@@ -19,7 +19,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
 
       try {
         await transporter.sendMail({
-            from:'"TedCounter"<tedcounter@gmail.com>',
+            from:'"Tedly"<tedcounter@gmail.com>',
             to: req.body.email,
             subject: `New Tedly Request - ${req.body.name}`,
             html: 
@@ -37,6 +37,5 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
       }
 
     console.warn("Email Sent")
-    console.log(req.body);
     res.status(200).json({successful: true});
 }

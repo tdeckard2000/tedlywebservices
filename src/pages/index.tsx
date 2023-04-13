@@ -8,24 +8,24 @@ import ThreeItemSectionComponent from '@/components/threeItemSection'
 import Image from 'next/image'
 import OneItemSection from '@/components/oneItemSection'
 import CheckListSection from '@/components/checkListSection'
+import StatusModalComponent from '@/components/statusModal'
 
 export default function Home() {
 
   const [activePage, setActivePage] = useState<Pages>('home');
   const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false);
+  const [showFormModal, setShowFormModal] = useState<boolean>(false);
+
 
   const pageSelected = (page: Pages) => {
-    console.log(page)
     setActivePage(page)
   }
 
   const openMobileMenu = () => {
-    console.log("open")
     setMenuIsOpen(true);
   }
 
   const closeMobileMenu = () => {
-    console.log("close")
     setMenuIsOpen(false);
   }
 
@@ -36,9 +36,9 @@ export default function Home() {
         <meta name="description" content="Quality Websites For Small Businesses" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        {/* <link rel="preload" as='image' imageSrcSet='bgMobile1.webp 700w, bgDesktop1.webp 1500w' imageSizes='100%'/> */}
       </Head>
       <main className={styles.main}>
+
         <MobileMenuComponent
           menuIsOpen={menuIsOpen}
           closeCallback={closeMobileMenu}
@@ -51,12 +51,14 @@ export default function Home() {
             linkCallback={pageSelected}
             openMenuCallback={openMobileMenu}
             menuIsOpen={menuIsOpen}
+            showFormModal={showFormModal}
+            setShowFormModal={setShowFormModal}
           ></HeaderComponent>
           <div className={styles.body}>
             <div className={styles.titleText}>
               <h1>Modern Web Design + Development</h1>
               <p>We offer 100% hand-coded websites without the need for page builders or WordPress. - Unlimited edits and 24/7 support starting at $160/mo.</p>
-              <button>GET IN TOUCH!</button>
+              <button onClick={() => setShowFormModal(true)}>GET IN TOUCH!</button>
             </div>
           </div>
           <div className={styles.sectionTwo}>

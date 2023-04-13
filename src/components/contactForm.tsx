@@ -1,9 +1,11 @@
-import React, { FormEvent, SyntheticEvent, useEffect } from "react";
+import React, { FormEvent, SyntheticEvent, useEffect, useState } from "react";
 import styles from "@/styles/ContactForm.module.scss"
 import Image from "next/image";
+import StatusModalComponent from "./statusModal";
 
 interface Props {
-    // children: any;
+    showCloseIcon: boolean;
+    closeCallback?: () => void;
 }
 
 interface MessageForm {
@@ -15,24 +17,13 @@ interface MessageForm {
 }
 
 export default function ContactFormComponent (props: Props) {
-
-    
-    // useEffect(() => {
-    //     if(!tele) return
-    //     tele.addEventListener('keyup', function(e){
-    //         console.log("boom")
-    //         //@ts-ignore
-    //       if (event?.key != 'Backspace' && (tele.value.length === 3 || tele.value.length === 7)){
-    //       tele.innerHTML += '-';
-    //       }
-    //     });
-    // })
+    const [showSendingModal, setShowSendingModal] = useState<boolean>(false);
+    const [showSentModal, setShowSentModal] = useState<boolean>(false);
 
     const onSubmit = async (event: any) => {
         event.preventDefault();
+        setShowSendingModal(true);
         if(!event.target) return;
-        console.log("target: ", event.target.name.value)
-        // const value = event.target.value;
         const formData: MessageForm = {
             name: event.target.name.value,
             business: event.target.business.value,
@@ -40,7 +31,6 @@ export default function ContactFormComponent (props: Props) {
             phone: event.target.phone.value,
             message: event.target.message.value
         }
-        console.log(formData)
         const response = await fetch("/api/email", {
             method: "POST",
             body: JSON.stringify(formData),
@@ -49,7 +39,31 @@ export default function ContactFormComponent (props: Props) {
                 "Accept": "application/json"
             },
         })
-        console.log("response, ", response)
+        if(response.status === 200) {
+            setTimeout(() => {
+                setShowSendingModal(false);
+                setShowSentModal(true);
+            }, 1000)
+            setTimeout(() => {
+                setShowSentModal(false);
+                clearForm();
+                if(props.closeCallback) {
+                    props.closeCallback();
+                }
+            }, 3000)
+        }
+    }
+
+    const clearForm = () => {
+        const name: HTMLInputElement | null = document.querySelector('#name');
+        const business: HTMLInputElement | null = document.querySelector('#business');
+        const email: HTMLInputElement | null = document.querySelector('#email');
+        const phone: HTMLInputElement | null = document.querySelector('#phone');
+        // const message: HTMLInputElement | null = document.querySelector('#message');
+        name ? name.value = "" : undefined;
+        business ? business.value = "" : undefined;
+        email ? email.value = "" : undefined;
+        phone ? phone.value = "" : undefined;
     }
 
     const onPhoneNumber = (event: KeyboardEvent) => {
@@ -57,7 +71,6 @@ export default function ContactFormComponent (props: Props) {
         if(input) {
             const value = input.value;
             if(event.key !== "Backspace" && (value.length === 3 || value.length === 7)) {
-                console.log(event.key)
                 input.value += '-'
             }
         }
@@ -65,7 +78,20 @@ export default function ContactFormComponent (props: Props) {
 
     return(
         <div className={styles.main}>
+            <span style={{position: "fixed", zIndex: "1500", display: showSendingModal ? "initial" : "none"}}>
+                <StatusModalComponent>
+                    <p>Sending...</p>
+                </StatusModalComponent>
+            </span>
+            <span style={{position: "fixed", zIndex: "1500", display: showSentModal ? "initial" : "none"}}>
+                <StatusModalComponent>
+                    <p>Message Sent <Image src="/letterCheck.svg" alt="letter sent icon" width={30} height={30}></Image></p>
+                </StatusModalComponent>
+            </span>
             <div className={styles.formContainer}>
+                <div style={{display: props.showCloseIcon? "block" : "none"}} className={styles.closeIcon}>
+                    <Image onClick={props.closeCallback} src="/closeIcon.svg" alt="close button" width={30} height={30}></Image>
+                </div>
                 <form onSubmit={(data) => onSubmit(data as any)}>
                     <input required placeholder="Name" type="text" id="name" name="name"/>
                     <input required placeholder="Business" type="text" id="business" name="business"/>

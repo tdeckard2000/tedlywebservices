@@ -1,19 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "@/styles/Header.module.scss"
 import { Pages } from "@/types/main";
 import Image from "next/image";
 import Link from "next/link";
+import StatusModalComponent from "./statusModal";
+import FormModalComponent from "./formModal";
 
 interface Props {
     activePage: Pages;
     linkCallback: Function;
     openMenuCallback: Function;
     menuIsOpen: boolean;
+    showFormModal: boolean;
+    setShowFormModal: Function;
 }
 
 export default function HeaderComponent(props: Props) {
+
     return (
         <div className={styles.main}>
+            <span style={{position: "fixed", zIndex: "2500", display: props.showFormModal ? "initial" : "none"}}>
+                <FormModalComponent
+                    closeCallback={() => props.setShowFormModal(false)}
+                ></FormModalComponent>
+            </span>
             <div className={styles.logoContainer}>
                 <div className={styles.top}>Tedly</div>
                 <div className={styles.bottom}>Web Services</div>

@@ -14,9 +14,9 @@ export default function Services() {
 
   const [activePage, setActivePage] = useState<Pages>('services');
   const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false);
+  const [showFormModal, setShowFormModal] = useState<boolean>(false);
 
   const pageSelected = (page: Pages) => {
-    console.log(page)
     setActivePage(page)
   }
 
@@ -52,13 +52,15 @@ export default function Services() {
               linkCallback={pageSelected}
               openMenuCallback={openMobileMenu}
               menuIsOpen={menuIsOpen}
+              showFormModal={showFormModal}
+              setShowFormModal={setShowFormModal}
             ></HeaderComponent>
           </div>
           <div className={styles.body}>
             <div className={styles.titleContainer}>
               <Image style={{filter: "invert(1)"}} src="/blocks.svg" alt='Phone icon' width={50} height={50}></Image>
               <h1>OUR SERVICES</h1>
-              <button>GET IN TOUCH!</button>
+              <button onClick={()=>setShowFormModal(true)}>GET IN TOUCH!</button>
             </div>
           </div>
 

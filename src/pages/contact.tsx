@@ -14,9 +14,9 @@ export default function Contact() {
 
   const [activePage, setActivePage] = useState<Pages>('contact');
   const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false);
+  const [showFormModal, setShowFormModal] = useState<boolean>(false);
 
   const pageSelected = (page: Pages) => {
-    console.log(page)
     setActivePage(page)
   }
 
@@ -52,14 +52,15 @@ export default function Contact() {
               linkCallback={pageSelected}
               openMenuCallback={openMobileMenu}
               menuIsOpen={menuIsOpen}
+              showFormModal={showFormModal}
+              setShowFormModal={setShowFormModal}
             ></HeaderComponent>
           </div>
           <div className={styles.body}>
             <div className={styles.titleContainer}>
               <Image style={{filter: "invert(1)"}} src="/phone.svg" alt='Phone icon' width={50} height={50}></Image>
               <h1>{"LET'S CHAT"}</h1>
-              {/* <p>What we have to offer.</p> */}
-              <button>GET IN TOUCH!</button>
+              <button onClick={()=>setShowFormModal(true)}>GET IN TOUCH!</button>
             </div>
           </div>
             <div className={styles.sectionTwo}>
@@ -72,7 +73,9 @@ export default function Contact() {
                   <ImageTextSectionComponent>
                     <div className={styles.formContainer} id='test'>
                       {/* <h1><span>Via</span> Form,</h1> */}
-                      <ContactFormComponent></ContactFormComponent>
+                      <ContactFormComponent
+                        showCloseIcon={false}
+                      ></ContactFormComponent>
                     </div>
                     <div className={styles.contactContainer}>
                       {/* <h1><span>Phone</span>, or Email</h1> */}
