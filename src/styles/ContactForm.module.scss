@@ -1,0 +1,80 @@
+.main {
+    position: relative;
+}
+
+.formContainer {
+    background-color: white;
+    border-radius: 6px;
+    height: fit-content;
+    margin: 0px auto;
+    padding: 20px;
+    width: calc(100% - 40px);
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 12px;
+        width: 350px;
+        // max-width: calc(100% - 40px);
+    }
+    
+    input {
+        font-family: inherit;
+        border: 1px solid #999999;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 15px;
+        width: 90%;
+        margin-bottom: 12px;
+    }
+
+    textarea {
+        font-family: inherit;
+        font-weight: 600;
+        border: 1px solid #999999;
+        border-radius: 6px;
+        padding: 15px;
+        width: 90% !important;
+        resize: none;
+        height: 150px;
+    }
+
+    button {
+        background-color: rgb(29, 29, 29);
+        border: none;
+        box-shadow: 1px 1px 5px #0000001f;
+        color: white;
+        font-weight: 600;
+        height: 45px;
+        margin-top: 30px;
+        user-select: none;
+        width: 200px;
+
+        &:hover {
+            background-color: rgb(0, 0, 0);
+            box-shadow: none;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) { //tablet
+    .formContainer {
+        
+        form {
+            width: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) { //phone
+    .formContainer {
+        
+        form {
+            width: 250px;
+        }
+    }
+}

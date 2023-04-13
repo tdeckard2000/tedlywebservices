@@ -5,6 +5,9 @@ import { useState } from 'react'
 import { Pages } from '@/types/main'
 import MobileMenuComponent from '@/components/mobileMenu'
 import Image from 'next/image'
+import ContactFormComponent from '@/components/contactForm'
+import OneItemSectionComponent from '@/components/oneItemSection'
+import ImageTextSectionComponent from '@/components/imageTextSection'
 
 
 export default function Contact() {
@@ -60,7 +63,30 @@ export default function Contact() {
             </div>
           </div>
             <div className={styles.sectionTwo}>
-              <h1>Placeholder</h1>
+              <div>
+                <OneItemSectionComponent>
+                  <h1><span>Get</span> in Touch</h1>
+                  <p>Via Form, Phone or Email</p>
+                </OneItemSectionComponent>
+                <div className={styles.formSection}>
+                  <ImageTextSectionComponent>
+                    <div className={styles.formContainer} id='test'>
+                      {/* <h1><span>Via</span> Form,</h1> */}
+                      <ContactFormComponent></ContactFormComponent>
+                    </div>
+                    <div className={styles.contactContainer}>
+                      {/* <h1><span>Phone</span>, or Email</h1> */}
+                      / /<Image src="/paperPlaneThin.svg" height={60} width={60} 
+                      style={{filter: "invert(1)", rotate: "-20deg"}}
+                      alt='paper airplane icon'></Image>
+                      <h1><span>Phone</span></h1>
+                      <h2><a href="tel:8123605563">812-360-5563</a></h2>
+                      <h1><span>Email</span></h1>
+                      <h2><a href="mailto:tredeckard@gmail.com">tredeckard@gmail.com</a></h2>
+                    </div>
+                  </ImageTextSectionComponent>
+                </div>
+              </div>
             </div>
         </div>
       </main>

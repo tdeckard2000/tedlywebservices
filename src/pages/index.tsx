@@ -122,6 +122,7 @@ export default function Home() {
                 <Image className={styles.me} src='/meCropped.jpg' height={200} width={200} alt="Storefront Icon"></Image>
                 <p className={styles.name}>Trent Deckard</p>
                 <p className={styles.title}>OWNER & DEVELOPER</p>
+                <p className={styles.title}><a href="tel:8123605563">812-360-5563</a><br /><a href="mailto:tredeckard@gmail.com">tredeckard@gmail.com</a></p>
               </span>
             </OneItemSection>
           </div>
