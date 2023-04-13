@@ -148,7 +148,7 @@ export default function Services() {
                 <div>
                   <h1>Unlimited Changes</h1>
                   <p>
-                    Call me at any time, day or night.
+                    Call me at any time.
                     I will update your images, change your prices, or modify your products and services quickly and effectively.
                   </p>
                   <p>{`Don't sweat it.`}</p>
