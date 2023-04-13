@@ -46,7 +46,7 @@ export default function ContactFormComponent (props: Props) {
             }, 1000)
             setTimeout(() => {
                 setShowSentModal(false);
-                clearForm();
+                clearForm(event);
                 if(props.closeCallback) {
                     props.closeCallback();
                 }
@@ -54,24 +54,19 @@ export default function ContactFormComponent (props: Props) {
         }
     }
 
-    const clearForm = () => {
-        const name: HTMLInputElement | null = document.querySelector('#name');
-        const business: HTMLInputElement | null = document.querySelector('#business');
-        const email: HTMLInputElement | null = document.querySelector('#email');
-        const phone: HTMLInputElement | null = document.querySelector('#phone');
-        // const message: HTMLInputElement | null = document.querySelector('#message');
-        name ? name.value = "" : undefined;
-        business ? business.value = "" : undefined;
-        email ? email.value = "" : undefined;
-        phone ? phone.value = "" : undefined;
+    const clearForm = (event: any) => {
+        event.target.name.value = "";
+        event.target.business.value ="";
+        event.target.email.value = "";
+        event.target.phone.value = "";
     }
 
-    const onPhoneNumber = (event: KeyboardEvent) => {
-        const input: HTMLInputElement | null = document.querySelector('#phone');
-        if(input) {
-            const value = input.value;
+    const onPhoneNumber = (event: any) => {
+        if(event.target.value) {
+            console.log("input", event.target.value)
+            const value = event.target.value;
             if(event.key !== "Backspace" && (value.length === 3 || value.length === 7)) {
-                input.value += '-'
+                event.target.value += '-'
             }
         }
     }
