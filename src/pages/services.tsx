@@ -65,12 +65,13 @@ export default function Services() {
             <div className={styles.sectionTwo}>
               <ImageTextSectionComponent>
                 <section>
-                  <Image src='/designServices.svg' alt="laptop on white background" fill style={{borderRadius: "10px 0 0 10px"}}></Image>
+                  <Image src='/checkCircleThin.svg' alt="laptop on white background" fill style={{borderRadius: "10px 0 0 10px"}}></Image>
                 </section>
                 <div>
-                  <h1>Web Design + Development<br /> Done Right</h1>
-                  <p>{`We don't use bloated plugins, third-party code, WordPress, or page builders. We carefully write every line of code by hand, 
-                  allowing for better real-world performance and more flexibility when it comes to designing your website.`}</p>
+                  <h1>Development Done Right</h1>
+                  <p>{`We carefully write every line of code by hand, 
+                  allowing for better real-world performance and more flexibility when it comes to designing your website.
+                  We don't use bloated plugins, third-party code, WordPress, or page builders.`}</p>
                   <p>{"For the best conversion rates and higher search rankings, faster websites are where it's at."}</p>
                 </div>
               </ImageTextSectionComponent>
@@ -79,7 +80,7 @@ export default function Services() {
 
               <ImageTextSectionComponent>
                 <section className={styles.mobileImage}>
-                  <Image src='/modernDesign.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
+                  <Image src='/modernDesignThin.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
                 </section>
                 <div>
                   <h1>Sleek & Modern</h1>
@@ -87,7 +88,7 @@ export default function Services() {
                   This makes it easier for customers to navigate your website and it directs their attention to what matters most.`} </p>
                 </div>
                 <section className={styles.desktopImage}>
-                  <Image src='/modernDesign.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
+                  <Image src='/modernDesignThin.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
                 </section>
               </ImageTextSectionComponent>
 
@@ -95,13 +96,15 @@ export default function Services() {
 
               <ImageTextSectionComponent>
                 <section>
-                  <Image src='/earthSearch.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
+                  <Image src='/devicesThin.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
                 </section>
                 <div>
-                  <h1>Search Engine Optimized</h1>
-                  <p>{`To rank your website higher on Google, we follow all the latest and greatest SEO best practices.
-                  User accessibility, quick loading times, mobile and tablet support, and clean code structures each 
-                  play an important role in Google's ranking algorithm.`} </p>
+                  <h1>Mobile Compatibility</h1>
+                  <p>{`
+                    Over 58% of all web traffic comes from a mobile device.
+                    That's why we design your website to be compatible with desktops, laptops, tablets, mobile phones, and everything in between.
+                  `}</p>
+                  <p>{`Visit your website from anywhere.`}</p>
                 </div>
               </ImageTextSectionComponent>
 
@@ -109,7 +112,39 @@ export default function Services() {
 
               <ImageTextSectionComponent>
                 <section className={styles.mobileImage}>
-                  <Image src='/gearSparkle.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
+                  <Image src='/earthSearchThin.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
+                </section>
+                <div>
+                  <h1>Search Engine Optimized</h1>
+                  <p>{`To rank your website higher on Google, we follow all the latest and greatest SEO best practices.
+                  User accessibility, quick loading times, mobile and tablet support, and clean code structures each 
+                  play an important role in Google's ranking algorithm.`} </p>
+                </div>
+                <section className={styles.desktopImage}>
+                  <Image src='/earthSearchThin.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
+                </section>
+              </ImageTextSectionComponent>
+
+              <Image className={styles.sectionDivider} src="/dots.svg" alt='Squiggle line icon' width={30} height={30}></Image>
+
+              <ImageTextSectionComponent>
+                <section>
+                  <Image src='/cloudThin.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
+                </section>
+                <div>
+                  <h1>Hosting Included</h1>
+                  <p>
+                    To make your website available on the web, it needs to be hosted online. Hosting is included in the monthly fee, so no need to give it another thought.
+                  </p>
+                  <p>{`Don't sweat it.`}</p>
+                </div>
+              </ImageTextSectionComponent>
+
+              <Image className={styles.sectionDivider} src="/dots.svg" alt='Squiggle line icon' width={30} height={30}></Image>
+
+              <ImageTextSectionComponent>
+                <section className={styles.mobileImage}>
+                  <Image src='/gearSparkleThin.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
                 </section>
                 <div>
                   <h1>Unlimited Changes</h1>
@@ -120,7 +155,7 @@ export default function Services() {
                   <p>{`Don't sweat it.`}</p>
                 </div>
                 <section className={styles.desktopImage}>
-                  <Image src='/gearSparkle.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
+                  <Image src='/gearSparkleThin.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
                 </section>
               </ImageTextSectionComponent>
 
@@ -150,34 +185,36 @@ export default function Services() {
                 </div> */}
               </OneItemSection>
 
-              <ThreeItemSectionComponent>
-                <div>
-                    <h5>WEB APPLICATIONS</h5>
-                    <p>Need something more complex?</p>
-                    <p>I do that too <a style={{color: "white"}} href="https://www.trentendeavors.com">portfolio</a></p>
-                    <div>
-                      <Image fill src="terminal.svg" alt='Computer Monitor Icon'></Image>
-                    </div>
-                </div>
-                <span></span>
-                <div>
-                    <h5>WEBSITE CONSULTING</h5>
-                    <p>Still figuring out what you need?</p>
-                    <p>Let me answer your questions</p>
-                    <div>
-                      <Image fill src="assistance.svg" alt='Computer Monitor Icon'></Image>
-                    </div>
-                </div>
-                <span></span>
-                <div>
-                    <h5>FIX EXISTING SITES</h5>
-                    <p>Problems with a website someone else made?</p>
-                    <p>Let me fix it for you</p>
-                    <div>
-                      <Image fill src="constructionGuy.svg" alt='Cloud Icon'></Image>
-                    </div>
-                </div> 
-              </ThreeItemSectionComponent>
+              <div className={styles.otherServices}>
+                <ThreeItemSectionComponent>
+                  <div>
+                      <h5>WEB APPLICATIONS</h5>
+                      <p>Need something more complex?</p>
+                      <p>I do that too <a style={{color: "white"}} href="https://www.trentendeavors.com">portfolio</a></p>
+                      <div>
+                        <Image fill src="terminal.svg" alt='Computer Monitor Icon'></Image>
+                      </div>
+                  </div>
+                  <span></span>
+                  <div>
+                      <h5>WEBSITE CONSULTING</h5>
+                      <p>Still figuring out what you need?</p>
+                      <p>Let me answer your questions</p>
+                      <div>
+                        <Image fill src="assistance.svg" alt='Computer Monitor Icon'></Image>
+                      </div>
+                  </div>
+                  <span></span>
+                  <div>
+                      <h5>FIX EXISTING SITES</h5>
+                      <p>Problems with a website someone else made?</p>
+                      <p>Let me fix it for you</p>
+                      <div>
+                        <Image fill src="constructionGuy.svg" alt='Cloud Icon'></Image>
+                      </div>
+                  </div> 
+                </ThreeItemSectionComponent>
+              </div>
             </div>
         </div>
       </main>
