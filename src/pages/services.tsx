@@ -164,7 +164,7 @@ export default function Services() {
 
               <ImageTextSectionComponent>
                 <section>
-                  <Image className={styles.photoOfMe} src='/trentTrust.jpg' alt="photo of the developer" fill style={{borderRadius: "50px", filter: 'none'}}></Image>
+                  <Image className={styles.photoOfMe} src='/trentTrust.jpg' alt="photo of the developer" fill style={{borderRadius: "50px", filter: 'none', border: '2px solid white'}}></Image>
                 </section>
                 <div>
                   <h1>A Developer You Can Trust</h1>
@@ -181,9 +181,6 @@ export default function Services() {
                   <h1><span>Searching</span> For Something Else?</h1>
                   <p>I offer other services as well.<br />Give me a call.</p>
                 </span>
-                {/* <div>
-                      <Image src='checklist.svg' fill alt="Storefront Icon"></Image>
-                </div> */}
               </OneItemSection>
 
               <div className={styles.otherServices}>

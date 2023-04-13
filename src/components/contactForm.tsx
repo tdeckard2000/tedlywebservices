@@ -63,7 +63,6 @@ export default function ContactFormComponent (props: Props) {
 
     const onPhoneNumber = (event: any) => {
         if(event.target.value) {
-            console.log("input", event.target.value)
             const value = event.target.value;
             if(event.key !== "Backspace" && (value.length === 3 || value.length === 7)) {
                 event.target.value += '-'
