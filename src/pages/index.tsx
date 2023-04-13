@@ -116,7 +116,7 @@ export default function Home() {
                 <h1><span>Who</span> We Are</h1>
                 <p>My nickname is <span style={{color: '#9f8763', fontWeight: '500'}}>Ted</span>, but you can call me <span>Trent</span>. 
                   I have been developing websites for 5+ years professionally and for fun.
-                  Tedly was created as a means to work for myself. I enjoy the challenges and
+                  Tedly was created as a means to work for myself. I enjoy the technical challenges and
                   personal connections that come with running your own business.</p>
                 <p>Learn more: <a href="https://www.trentendeavors.com">Personal Portfolio</a></p>
                 <Image className={styles.me} src='/meCropped.jpg' height={200} width={200} alt="Storefront Icon"></Image>

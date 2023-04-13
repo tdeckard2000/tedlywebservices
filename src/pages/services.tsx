@@ -136,7 +136,6 @@ export default function Services() {
                   <p>
                     To make your website available on the web, it needs to be hosted online. Hosting is included in the monthly fee, so no need to give it another thought.
                   </p>
-                  <p>{`Don't sweat it.`}</p>
                 </div>
               </ImageTextSectionComponent>
 
@@ -178,7 +177,7 @@ export default function Services() {
               <OneItemSection>
                 <span className={styles.pitch}>
                   <h1><span>Searching</span> For Something Else?</h1>
-                  <p>I offer other services as well. Let me build what you need</p>
+                  <p>I offer other services as well. Let me build what you need.</p>
                 </span>
                 {/* <div>
                       <Image src='checklist.svg' fill alt="Storefront Icon"></Image>
@@ -190,7 +189,7 @@ export default function Services() {
                   <div>
                       <h5>WEB APPLICATIONS</h5>
                       <p>Need something more complex?</p>
-                      <p>I do that too <a style={{color: "white"}} href="https://www.trentendeavors.com">portfolio</a></p>
+                      <p>I do that too <a style={{color: "white"}} href="https://www.trentendeavors.com">portfolio</a>.</p>
                       <div>
                         <Image fill src="terminal.svg" alt='Computer Monitor Icon'></Image>
                       </div>
@@ -199,7 +198,7 @@ export default function Services() {
                   <div>
                       <h5>WEBSITE CONSULTING</h5>
                       <p>Still figuring out what you need?</p>
-                      <p>Let me answer your questions</p>
+                      <p>Let me answer your questions.</p>
                       <div>
                         <Image fill src="assistance.svg" alt='Computer Monitor Icon'></Image>
                       </div>
@@ -208,7 +207,7 @@ export default function Services() {
                   <div>
                       <h5>FIX EXISTING SITES</h5>
                       <p>Problems with a website someone else made?</p>
-                      <p>Let me fix it for you</p>
+                      <p>Let me fix it for you.</p>
                       <div>
                         <Image fill src="constructionGuy.svg" alt='Cloud Icon'></Image>
                       </div>
