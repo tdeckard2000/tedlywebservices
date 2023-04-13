@@ -167,7 +167,7 @@ export default function Services() {
                   <Image className={styles.photoOfMe} src='/trentTrust.jpg' alt="photo of the developer" fill style={{borderRadius: "50px", filter: 'none'}}></Image>
                 </section>
                 <div>
-                  <h1>A Developer you can Trust</h1>
+                  <h1>A Developer You Can Trust</h1>
                   <p>{`The #1 complaint I hear about other development companies is a lack of communication (or none at all).`}</p>
                   <p>{`That will`} <span style={{textDecoration: "underline"}}>not</span> {`be your experience with Tedly. 
                   Clear communication and timely replies are paramount. Just tell me what you need.`}</p>
