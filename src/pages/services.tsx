@@ -177,7 +177,7 @@ export default function Services() {
               <OneItemSection>
                 <span className={styles.pitch}>
                   <h1><span>Searching</span> For Something Else?</h1>
-                  <p>I offer other services as well. Let me build what you need.</p>
+                  <p>I offer other services as well.<br />Give me a call.</p>
                 </span>
                 {/* <div>
                       <Image src='checklist.svg' fill alt="Storefront Icon"></Image>
