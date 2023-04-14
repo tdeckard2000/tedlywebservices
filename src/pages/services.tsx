@@ -171,7 +171,7 @@ export default function Services() {
                   <h1>A Developer You Can Trust</h1>
                   <p>{`The #1 complaint I hear about other development companies is a lack of communication (or none at all).`}</p>
                   <p>{`That will`} <span style={{textDecoration: "underline"}}>not</span> {`be your experience with Tedly. 
-                  Clear communication and timely replies are my standard.`}</p>
+                  Clear communication and timely replies are our standard.`}</p>
                 </div>
               </ImageTextSectionComponent>
 

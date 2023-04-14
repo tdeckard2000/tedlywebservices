@@ -98,7 +98,8 @@ export default function About() {
                   <span>
                     <h1><span>Tailored</span> For You</h1>
                     <p>
-                    We specialize in creating tailored content that caters to the unique needs of each business. 
+                    We specialize in creating tailored content that caters to the unique needs of each business,
+                    placing your principal products and services front and center for better conversion rates.  
                     We work closely with you throughout the process to ensure that your website meets all expectations.
                     </p>
                     <div>
