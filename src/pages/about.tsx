@@ -7,6 +7,8 @@ import MobileMenuComponent from '@/components/mobileMenu'
 import Image from 'next/image'
 import ImageTextSectionComponent from '@/components/imageTextSection'
 import OneItemSectionComponent from '@/components/oneItemSection'
+import ThreeItemSectionComponent from '@/components/threeItemSection'
+import ContactFormComponent from '@/components/contactForm'
 
 
 export default function About() {
@@ -57,41 +59,20 @@ export default function About() {
           </div>
           <div className={styles.body}>
             <div className={styles.titleContainer}>
-              <Image style={{filter: "invert(1)"}} src="/smile.svg" alt='Phone icon' width={50} height={50}></Image>
+              <Image style={{filter: "invert(1)"}} src="/compass.svg" alt='Phone icon' width={50} height={50}></Image>
               <h1>ABOUT US</h1>
               <button onClick={()=>setShowFormModal(true)}>GET IN TOUCH!</button>
             </div>
           </div>
             <div className={styles.sectionTwo}>
-              {/* <ImageTextSectionComponent>
-                <section>
-                  <Image src='/meSanFranLong.jpg' alt="laptop on white background" style={{filter: "none", borderRadius: "10px"}} height={400} width={300}></Image>
-                </section>
-                <div>
-                  <p>Tedly Web Services</p>
-                  <p>Tedly Web Services</p>
-                  <p>Tedly Web Services</p>
-                  <h1><span>$500</span> down. <span>$160</span> Per Month. <br></br>6 Month Minimum Contract.</h1>
-                  <p>We keep it simple. No hidden fees or surprises. $500 down for a standard 4 page small business website.</p>
-                  <p>Cancel anytime with no fees or hassles.</p>
-                </div>
-              </ImageTextSectionComponent> */}
-              {/* <div className={styles.flexContainer}>
-                <div className={styles.image}>
-                  <Image src='/meSanFranLong.jpg' alt="laptop on white background" style={{filter: "none", borderRadius: "4px"}} height={483} width={400}></Image>
-                </div>
-                <div className={styles.text}>
-                  <h1>Test</h1>
-                  <p>More Test</p>
-                </div>
-              </div> */}
               <ImageTextSectionComponent>
-                <section className={styles.photoOfMe} style={{display: 'flex', justifyContent: 'center', alignItems: "center"}}>
+                <section id={styles.photoOfMe} style={{display: 'flex', justifyContent: 'center', alignItems: "center"}}>
                   {/* <Image src='/handshakeThin.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image> */}
-                  <Image height={210} width={210} src='/trentTrust.jpg' alt="photo of the developer" style={{borderRadius: "50px", filter: 'none', border: '3px solid black', boxShadow: "1px 1px 18px black"}}></Image>
+                  <Image fill src='/trentTrust.jpg' alt="photo of the developer" style={{borderRadius: "12px", filter: 'none', boxShadow: "1px 1px 18px black"}}></Image>
+                  <div style={{color:"white", height:"115%", display: "flex", position: "relative", alignItems: "flex-end", fontSize: "12px", fontWeight: "100"}}>My Partner and I</div>
                 </section>
                 <div className={styles.textContainer} id={styles.textContainer}>
-                  <p style={{color: '#9f8763'}}>Tedly Web Services</p>
+                  <p style={{color: '#9f8763'}}>Tedly Web Services LLC</p>
                   <h1>Modern Designs for Small Businesses</h1>
                   <p>{`Hi! My name is Trent Deckard.`}</p>
                   <p>{`
@@ -99,17 +80,88 @@ export default function About() {
                   I bring over four years of hands-on development experience to the table. 
                   From creating visually-stunning business websites to building complex web applications 
                   and everything in between, my passion for web development runs deep.
+                  Tedly was founded on a shared enthusiasm for coding, problem-solving, creativity, and exceeded expectations.
                  `}</p>
-                  <p>Tedly was born out of a combined passion for coding, problem-solving, creativity, and exceeded expectations.</p>
                   <p>{`
                   Small businesses often don't have thousands of dollars to spend up front on a new website.
                   Those that do risk being taken advantage of by mass-production companies, resulting in a generic
-                  website that fails to capture the unique essence of their business.
+                  website that fails to capture the unique aspects of their business. 
+                  Our $160 monthly model aims to solve this, with the added benefit of 24/7 support and unlimited edits.
                   `}</p>
-                  <p>{`We understand the struggles of small businesses and strive to provide affordable, customized website solutions that meet your specific needs.`}</p>
+                  <p>{`We understand the struggles of small businesses and strive to provide beautiful, customized website solutions that meet your specific needs.`}</p>
                   <p>{`"I wouldn't choose anyone else!" - My Goal`}</p>
                 </div>
               </ImageTextSectionComponent>
+              <div style={{marginTop: "150px"}}>
+                <OneItemSectionComponent>
+                  <span>
+                    <h1><span>Tailored</span> For You</h1>
+                    <p>
+                    We specialize in creating tailored content that caters to the unique needs of each business. 
+                    We work closely with you throughout the process to ensure that your website meets all expectations.
+                    </p>
+                    <div>
+                        <Image src='tune.svg' fill alt="Storefront Icon"></Image>
+                    </div>
+                  </span>
+                </OneItemSectionComponent>
+              </div>
+
+              <a style={{textDecoration: "none"}} href="/services"><button className={styles.servicesButton}>SERVICES</button></a>
+
+              <ThreeItemSectionComponent>
+                <div>
+                  <h5>A+ Customer Care</h5>
+                  <p>Get help quickly and easily</p>
+                  <p>No automated systems or hold music</p>
+                  <div>
+                      <Image fill src="smile.svg" alt='Computer Monitor Icon'></Image>
+                  </div>
+                </div>
+                <span></span>
+                <div>
+                  <h5>Mobile Support</h5>
+                  <p>58% of browsing happens on mobile</p>
+                  <p>Visit your website from anywhere</p>
+                  <div>
+                      <Image fill src="smartphone.svg" alt='Gear icon'></Image>
+                  </div>
+                </div>
+                <span></span>
+                <div>
+                  <h5>Unlimited Edits</h5>
+                  <p>Products, prices, images, wording</p>
+                  <p>Change is good with Tedly</p>
+                  <div>
+                      <Image fill src="gearSparkle.svg" alt='Gear icon'></Image>
+                  </div>
+                </div>
+              </ThreeItemSectionComponent>
+
+              {/* <Image className={styles.sectionDivider} src="/dots.svg" alt='Squiggle line icon' width={30} height={30}></Image> */}
+              
+              <div style={{marginTop: "150px"}}>
+                <div className={styles.formSection}>
+                  <ImageTextSectionComponent>
+                    <div className={styles.formContainer} id='test'>
+                      <ContactFormComponent
+                        showCloseIcon={false}
+                      ></ContactFormComponent>
+                    </div>
+                    {/* <div className={styles.contactContainer}>
+                      / /<Image src="/paperPlaneThin.svg" height={60} width={60} 
+                      style={{filter: "invert(1)", rotate: "-20deg"}}
+                      alt='paper airplane icon'></Image>
+                      <h1><span>Phone</span></h1>
+                      <h2><a href="tel:8123605563">812-360-5563</a></h2>
+                      <h1><span>Email</span></h1>
+                      <h2><a href="mailto:tredeckard@gmail.com">tredeckard@gmail.com</a></h2>
+                      <h1><span>Location</span></h1>
+                      <h2>Columbus Ohio</h2>
+                    </div> */}
+                  </ImageTextSectionComponent>
+                </div>
+              </div>
             </div>
         </div>
       </main>

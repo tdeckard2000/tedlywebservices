@@ -32,6 +32,7 @@
             margin-top: 30px;
             user-select: none;
             width: 200px;
+            font-family: inherit;
 
             &:hover {
                 background-color: rgb(0, 0, 0);
@@ -77,7 +78,7 @@
     top: 0;
     bottom: 0;
     left: 0;
-    height: 2800px;
+    height: 3100px;
     width: 100%;
 
     .float {
@@ -122,6 +123,57 @@
     text-align: left;
 }
 
+#photoOfMe {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    justify-content: center;
+}
+
+.formContainer {
+    border: 3px solid #9f8763;
+    border-radius: 10px;
+    height: fit-content;
+    // margin-bottom: 50px;
+}
+
+.sectionDivider {
+    margin: 100px auto 0;
+    width: 100%;
+    // filter: invert(57%) sepia(23%) saturate(538%) hue-rotate(357deg) brightness(90%) contrast(87%);
+    filter: invert(1);
+}
+
+.contactContainer {
+    height: 400px;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.servicesButton {
+    background-color: #9f8763;
+            border: none;
+            box-shadow: 1px 1px 5px #0000001f;
+            color: white;
+            display: block;
+            font-weight: 400;
+            height: 45px;
+            margin: 100px auto -50px;
+            user-select: none;
+            width: 200px;
+            font-family: inherit;
+            font-size: 14px;
+
+            &:hover {
+                background-color: #79664a;
+                box-shadow: none;
+                cursor: pointer;
+            }
+}
+
 @media screen and (max-width: 1000px) { //tablet
 
     .main {
@@ -134,7 +186,15 @@
         }
 
     }
-    
+
+    #photoOfMe {
+        width: 200px;
+        height: 250px;
+    }
+
+    .sectionTwo {
+        height: 2900px;
+    }
 }
 
 @media screen and (max-width: 650px) { //phone
@@ -185,9 +245,16 @@
 
     .sectionTwo {
         top: 500px;
+        height: 4000px;
     }
     
-    .photoOfMe {
+    #photoOfMe {
+        margin-bottom: 100px;
+        width: 300px;
+        height: 400px;
+    }
+
+    .formContainer {
         margin-bottom: 100px;
     }
 }

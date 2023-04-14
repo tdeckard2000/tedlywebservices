@@ -71,8 +71,7 @@ export default function Contact() {
                 </OneItemSectionComponent>
                 <div className={styles.formSection}>
                   <ImageTextSectionComponent>
-                    <div className={styles.formContainer} id='test'>
-                      {/* <h1><span>Via</span> Form,</h1> */}
+                    <div className={styles.formContainer}>
                       <ContactFormComponent
                         showCloseIcon={false}
                       ></ContactFormComponent>
