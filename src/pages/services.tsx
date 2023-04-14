@@ -78,7 +78,7 @@ export default function Services() {
                 </div>
               </ImageTextSectionComponent>
 
-              <Image className={styles.sectionDivider} src="/dots.svg" alt='Squiggle line icon' width={30} height={30}></Image>
+              <Image className={styles.sectionDivider} src="/dots.svg" alt='three dots divider icon' width={30} height={30}></Image>
 
               <ImageTextSectionComponent>
                 <section className={styles.mobileImage}>
@@ -94,7 +94,7 @@ export default function Services() {
                 </section>
               </ImageTextSectionComponent>
 
-              <Image className={styles.sectionDivider} src="/dots.svg" alt='Squiggle line icon' width={30} height={30}></Image>
+              <Image className={styles.sectionDivider} src="/dots.svg" alt='three dots divider icon' width={30} height={30}></Image>
 
               <ImageTextSectionComponent>
                 <section>
@@ -110,7 +110,7 @@ export default function Services() {
                 </div>
               </ImageTextSectionComponent>
 
-              <Image className={styles.sectionDivider} src="/dots.svg" alt='Squiggle line icon' width={30} height={30}></Image>
+              <Image className={styles.sectionDivider} src="/dots.svg" alt='three dots divider icon' width={30} height={30}></Image>
 
               <ImageTextSectionComponent>
                 <section className={styles.mobileImage}>
@@ -127,7 +127,7 @@ export default function Services() {
                 </section>
               </ImageTextSectionComponent>
 
-              <Image className={styles.sectionDivider} src="/dots.svg" alt='Squiggle line icon' width={30} height={30}></Image>
+              <Image className={styles.sectionDivider} src="/dots.svg" alt='three dots divider icon' width={30} height={30}></Image>
 
               <ImageTextSectionComponent>
                 <section>
@@ -141,11 +141,11 @@ export default function Services() {
                 </div>
               </ImageTextSectionComponent>
 
-              <Image className={styles.sectionDivider} src="/dots.svg" alt='Squiggle line icon' width={30} height={30}></Image>
+              <Image className={styles.sectionDivider} src="/dots.svg" alt='three dots divider icon' width={30} height={30}></Image>
 
               <ImageTextSectionComponent>
                 <section className={styles.mobileImage}>
-                  <Image src='/gearSparkleThin.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
+                  <Image src='/gearSparkleThin.svg' alt="sparkling gear icon" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
                 </section>
                 <div>
                   <h1>Unlimited Changes</h1>
@@ -156,7 +156,7 @@ export default function Services() {
                   <p>{`Don't sweat it.`}</p>
                 </div>
                 <section className={styles.desktopImage}>
-                  <Image src='/gearSparkleThin.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
+                  <Image src='/gearSparkleThin.svg' alt="sparkling gear icon" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
                 </section>
               </ImageTextSectionComponent>
 
@@ -164,7 +164,8 @@ export default function Services() {
 
               <ImageTextSectionComponent>
                 <section>
-                  <Image className={styles.photoOfMe} src='/trentTrust.jpg' alt="photo of the developer" fill style={{borderRadius: "50px", filter: 'none', border: '2px solid white'}}></Image>
+                  <Image src='/handshakeThin.svg' alt="laptop on white background" fill style={{borderRadius: " 0 10px 10px 0"}}></Image>
+                  {/* <Image className={styles.photoOfMe} src='/trentTrust.jpg' alt="photo of the developer" fill style={{borderRadius: "50px", filter: 'none', border: '2px solid white'}}></Image> */}
                 </section>
                 <div>
                   <h1>A Developer You Can Trust</h1>
