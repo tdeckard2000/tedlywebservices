@@ -9,6 +9,7 @@ import ImageTextSectionComponent from '@/components/imageTextSection'
 import OneItemSectionComponent from '@/components/oneItemSection'
 import ThreeItemSectionComponent from '@/components/threeItemSection'
 import ContactFormComponent from '@/components/contactForm'
+import Link from 'next/link'
 
 
 export default function About() {
@@ -107,7 +108,8 @@ export default function About() {
                 </OneItemSectionComponent>
               </div>
 
-              <a style={{textDecoration: "none"}} href="/services"><button className={styles.servicesButton}>SERVICES</button></a>
+              <Link style={{textDecoration: "none"}} href={"/services"}><button className={styles.servicesButton}>SERVICES</button></Link>
+              {/* <a style={{textDecoration: "none"}} href="/services"></a> */}
 
               <ThreeItemSectionComponent>
                 <div>
@@ -137,13 +139,11 @@ export default function About() {
                   </div>
                 </div>
               </ThreeItemSectionComponent>
-
-              {/* <Image className={styles.sectionDivider} src="/dots.svg" alt='Squiggle line icon' width={30} height={30}></Image> */}
               
               <div style={{marginTop: "150px"}}>
                 <div className={styles.formSection}>
                   <ImageTextSectionComponent>
-                    <div className={styles.formContainer} id='test'>
+                    <div className={styles.formContainer}>
                       <ContactFormComponent
                         showCloseIcon={false}
                       ></ContactFormComponent>
