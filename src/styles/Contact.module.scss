@@ -96,7 +96,7 @@
     border: 3px solid #9f8763;
     border-radius: 10px;
     height: fit-content;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
 }
 
 .contactContainer {
@@ -187,7 +187,10 @@
 
     .sectionTwo {
         top: 500px;
-        height: 1400px;
+        height: 1500px;
     }
 
+    .formContainer {
+        margin-bottom: 100px;
+    }
 }

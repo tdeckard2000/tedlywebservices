@@ -95,12 +95,19 @@ export default function About() {
                   <h1>Modern Designs for Small Businesses</h1>
                   <p>{`Hi! My name is Trent Deckard.`}</p>
                   <p>{`
-                  I am the owner and sole developer for Tedly Web Services.
-                  Originally from Indiana, I accepted a full-stack web development role for
-                  a company in northern Utah where I worked for over four years.
-                   Prior to that, I spend some time working for the Mt. Hood National Forest in Oregon.
-                   I relocated to Columbus Ohio in 2023.`}</p>
-                  <p>The girl there in the picture? She brought me to Ohio.</p>
+                  As the owner and sole developer of Tedly Web Services, 
+                  I bring over four years of hands-on development experience to the table. 
+                  From creating visually-stunning business websites to building complex web applications 
+                  and everything in between, my passion for web development runs deep.
+                 `}</p>
+                  <p>Tedly was born out of a combined passion for coding, problem-solving, creativity, and exceeded expectations.</p>
+                  <p>{`
+                  Small businesses often don't have thousands of dollars to spend up front on a new website.
+                  Those that do risk being taken advantage of by mass-production companies, resulting in a generic
+                  website that fails to capture the unique essence of their business.
+                  `}</p>
+                  <p>{`We understand the struggles of small businesses and strive to provide affordable, customized website solutions that meet your specific needs.`}</p>
+                  <p>{`"I wouldn't choose anyone else!" - My Goal`}</p>
                 </div>
               </ImageTextSectionComponent>
             </div>

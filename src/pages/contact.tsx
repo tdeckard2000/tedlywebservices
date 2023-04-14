@@ -86,6 +86,8 @@ export default function Contact() {
                       <h2><a href="tel:8123605563">812-360-5563</a></h2>
                       <h1><span>Email</span></h1>
                       <h2><a href="mailto:tredeckard@gmail.com">tredeckard@gmail.com</a></h2>
+                      <h1><span>Location</span></h1>
+                      <h2>Columbus Ohio</h2>
                     </div>
                   </ImageTextSectionComponent>
                 </div>
