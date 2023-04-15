@@ -20,7 +20,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
       try {
         await transporter.sendMail({
             from:'"Tedly"<tedcounter@gmail.com>',
-            to: req.body.email,
+            to: "tredeckard@gmail.com",
             subject: `New Tedly Request - ${req.body.name}`,
             html: 
             `
