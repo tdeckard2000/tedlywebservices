@@ -22,7 +22,7 @@
     }
 
     div {
-        text-align: center;
+        text-align: left;
         align-items: stretch;
         max-width: 500px;
 
@@ -48,7 +48,14 @@
     .main {
         flex-direction: column;
 
+        section {
+            height: 80px;
+            width: 80px;
+        }
+
         div {
+
+            text-align: center;
 
             h1 {
                 margin-left: 30px;
