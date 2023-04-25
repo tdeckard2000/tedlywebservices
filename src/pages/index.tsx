@@ -104,9 +104,11 @@ export default function Home() {
             </ThreeItemSectionComponent>
             <OneItemSection>
               <span className={styles.pitch}>
-              <h1><span>$500</span> down. <span>$160</span> Per Month. <br></br>6 Month Minimum Contract.</h1>
+              <h1>
+              {/* <span>$500</span> down.  */}
+              <span>$160</span> Per Month. <br></br>6 Month Minimum Contract.</h1>
               <p>We keep it simple. No hidden fees or surprises. <br /> 
-                $500 down for a standard 4 page small business website. <br /> Cancel anytime, no costs or hassles.</p>
+                $160 per month for a standard 4 page small business website. <br /> Cancel anytime, no costs or hassles.</p>
               </span>
               <div>
                     <Image src='checklist.svg' fill alt="Storefront Icon"></Image>
