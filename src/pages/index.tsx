@@ -57,7 +57,7 @@ export default function Home() {
           <div className={styles.body}>
             <div className={styles.titleText}>
               <h1>Modern Web Design + Development</h1>
-              <p>We offer 100% hand-coded websites without the need for page builders or WordPress. - Unlimited edits and 24/7 support for $160/mo.</p>
+              <p>We offer 100% hand-coded websites without the need for page builders or WordPress. - Unlimited edits for $160/mo.</p>
               <button onClick={() => setShowFormModal(true)}>GET IN TOUCH!</button>
             </div>
           </div>

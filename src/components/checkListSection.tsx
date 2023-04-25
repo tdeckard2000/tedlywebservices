@@ -28,7 +28,7 @@ export default function CheckListSection (props: Props) {
                 <div className={styles.block}>
                     <Image src={'/check.svg'} alt="check icon" width={30} height={30}></Image>
                     <div>
-                        <h5>24/7 Support</h5>
+                        <h5>Amazing Support</h5>
                         <p>You get a direct line, no automated systems or menus</p>
                     </div>
                 </div>
