@@ -4,6 +4,6 @@ View here
 
 or
 
-[tedly.herokuapp.com](tedly.herokuapp.com)
+[https://main.dmhgfmedvm7if.amplifyapp.com/](https://main.dmhgfmedvm7if.amplifyapp.com/)
 
 <img src="https://raw.githubusercontent.com/tdeckard2000/tedlywebservices/main/photos/exampleImage.JPG">
